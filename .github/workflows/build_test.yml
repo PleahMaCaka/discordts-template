@@ -2,10 +2,10 @@ name: build test
 on:
   pull_request:
     branches:
-      - master
+      - main
   push:
     branches:
-      - master
+      - main
     paths-ignore:
       - .env.example
       - README.md
