@@ -4,7 +4,7 @@ import { Client, Discord, On } from "discordx"
 @Discord()
 export class InteractionHandler {
 
-	@On("interactionCreate")
+	@On({ event: "interactionCreate" })
 	private async interactionHandler(
 		[interaction]: ArgsOf<"interactionCreate">,
 		client: Client

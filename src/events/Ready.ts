@@ -4,7 +4,7 @@ import { Client, Discord, Once } from "discordx"
 @Discord()
 export class Ready {
 
-	@Once("ready")
+	@Once({ event: "ready" })
 	private async ready(
 		[ready]: ArgsOf<"ready">,
 		client: Client
